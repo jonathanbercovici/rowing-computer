@@ -1,5 +1,6 @@
 <img width="595" height="521" alt="Screenshot 2026-03-07 230841" src="https://github.com/user-attachments/assets/fd4bdd1c-6f6e-4c29-9350-0efa9b376a15" />
 
+https://lapse.hackclub.com/timelapse/Rufa2XrtfnKe
 
 This is my attempt at a rowing computer.
 THe aim of this project is to mhgave a  rowing helper so that the cox can work out what calls to make. I am going to try to make it in time for my race one the 21st of march.
