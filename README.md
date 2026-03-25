@@ -1,4 +1,24 @@
+"Disclaimer"
+
+The 3d printer i was planning to get still hasnt been shipped to me beacuse construct it taking a very long time sorry about this.
+
+
+
+
+
 <img width="595" height="521" alt="Screenshot 2026-03-07 230841" src="https://github.com/user-attachments/assets/fd4bdd1c-6f6e-4c29-9350-0efa9b376a15" />
+
+<img width="464" height="1033" alt="image" src="https://github.com/user-attachments/assets/555d2b23-7ef9-4f4d-b65f-c5dc252c9627" />
+
+
+This is the online web portal that allows the coaches to acess the data.
+
+https://github.com/user-attachments/assets/baca7985-2ced-4ace-9917-ff74679708b6
+
+
+here you can see an example of what the screen displays.
+
+
 
 https://lapse.hackclub.com/timelapse/Rufa2XrtfnKe
 
