@@ -1,55 +1,77 @@
-"Disclaimer"
+# Rowing Computer
 
-The 3d printer i was planning to get still hasnt been shipped to me beacuse construct it taking a very long time sorry about this.
+This is my attempt at building a custom rowing computer to help during training and races.
 
+The goal of this project is to give the cox useful, real-time data so they can make better calls while rowing. I’m aiming to get a working version ready in time for a race on the 21st of March.
 
+## Overview
 
+The computer is designed to display key rowing metrics:
 
+- Split (pace)
+- Distance
+- Stroke rate
+- Averages of all of the above
 
-<img width="595" height="521" alt="Screenshot 2026-03-07 230841" src="https://github.com/user-attachments/assets/fd4bdd1c-6f6e-4c29-9350-0efa9b376a15" />
+All of this will be calculated using just two sensors:
+- An IMU (for motion and stroke detection)
+- A GPS (for positioning and speed)
 
-<img width="464" height="1033" alt="image" src="https://github.com/user-attachments/assets/555d2b23-7ef9-4f4d-b65f-c5dc252c9627" />
+To improve accuracy, I’m planning to use **sensor fusion**, combining IMU and GPS data to get more reliable speed readings. The IMU will also be used to calculate stroke rate.
 
+The data will be shown on a screen for the cox, and also transmitted over WiFi to a coach’s phone for live feedback during training.
 
-This is the online web portal that allows the coaches to acess the data.
+## Web Interface
+
+This is the online web portal that allows coaches to access the data:
 
 https://github.com/user-attachments/assets/baca7985-2ced-4ace-9917-ff74679708b6
 
+Here’s an example of what the display looks like:
 
-here you can see an example of what the screen displays.
+<img width="595" height="521" alt="Web interface" src="https://github.com/user-attachments/assets/fd4bdd1c-6f6e-4c29-9350-0efa9b376a15" />
 
+<img width="464" height="1033" alt="Display example" src="https://github.com/user-attachments/assets/555d2b23-7ef9-4f4d-b65f-c5dc252c9627" />
 
-
+You can also view a timelapse of the project here:
 https://lapse.hackclub.com/timelapse/Rufa2XrtfnKe
 
-This is my attempt at a rowing computer.
-THe aim of this project is to mhgave a  rowing helper so that the cox can work out what calls to make. I am going to try to make it in time for my race one the 21st of march.
+## Electronics
+
+To build the computer, the plan is to use:
+- 8x M3 screws
+- A perfboard for the circuit (to keep costs down)
+- A fair amount of hot glue for sealing
+
+Hot glue is being used mainly to waterproof the electronics, which is pretty important for something going in a boat.
+
+Here’s the schematic:
+
+<img width="925" height="774" alt="Schematic" src="https://github.com/user-attachments/assets/b325c3ea-4d38-4ae2-ad20-b2bff9d9dbf8" />
+
+Even though this schematic is shown here, the actual build will likely be done on perfboard rather than a custom PCB.
+
+## Enclosure Design
+
+Below are some exploded views of the enclosure:
+
+<img width="485" height="465" alt="Exploded view 1" src="https://github.com/user-attachments/assets/55b11062-422b-4514-8f63-d6032a0df1c3" />
+
+<img width="548" height="465" alt="Exploded view 2" src="https://github.com/user-attachments/assets/c6d8e521-4d6f-4482-a33b-f242e4693ccf" />
+
+<img width="466" height="368" alt="Exploded view 3" src="https://github.com/user-attachments/assets/a609d1a4-415b-4c48-9a8c-9319fd7006aa" />
+
+And here’s the case without any components inside:
+
+<img width="666" height="456" alt="Empty case" src="https://github.com/user-attachments/assets/7c365bc2-d700-4bb3-a380-544416f4d5d8" />
+
+## Notes
 
 
-The computer will display the following information split, distance, rate and the averages of all of these.
-It will calculate all of this with only 2 sensors an imu and a gps. Because exact speed is very important in rowing i wll be using the sensor fusion aporach. I will combine the imu and gps for super acurate speed data. The imu will aslo calculate stroke rate. This will all then be displayed on a screen for the cox to see. It will aslo transmit data via wifi to the coaches phone so that they can help us train.
+- Sensor fusion (IMU + GPS) is the main challenge and will likely need tuning.
+- Waterproofing is a key focus, especially for real-world use on the water.
 
 
+---
 
-To build the computer you will need 8 M3 screws and a lot of hot glue. The reason i am using hot glue is becusae it waterproofs everything very nicely.
-
-<img width="925" height="774" alt="Screenshot 2026-03-08 111549" src="https://github.com/user-attachments/assets/b325c3ea-4d38-4ae2-ad20-b2bff9d9dbf8" />
-Here you see the schematic. I put this here even though i am going to be making it on a perf board because it is cheaper
-
-
-
-
-
-
-Here you can see some exploded veiws of the box:
-
-
-
-<img width="2" height="7" alt="image" src="https://github.com/user-attachments/assets/52aeebcf-e9b3-4be4-9505-15f484b6dc34" />
-<img width="485" height="465" alt="Screenshot 2026-03-07 230851" src="https://github.com/user-attachments/assets/55b11062-422b-4514-8f63-d6032a0df1c3" />
-<img width="548" height="465" alt="Screenshot 2026-03-07 230900" src="https://github.com/user-attachments/assets/c6d8e521-4d6f-4482-a33b-f242e4693ccf" />
-<img width="466" height="368" alt="Screenshot 2026-03-07 230916" src="https://github.com/user-attachments/assets/a609d1a4-415b-4c48-9a8c-9319fd7006aa" />
-
-This is the box without any of the compononetes inside.
-<img width="666" height="456" alt="Screenshot 2026-03-07 231009" src="https://github.com/user-attachments/assets/7c365bc2-d700-4bb3-a380-544416f4d5d8" />
-
+If you’re interested in building something similar or improving on this idea, feel free to use the designs and experiment with it.
